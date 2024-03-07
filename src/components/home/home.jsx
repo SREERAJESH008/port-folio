@@ -25,7 +25,7 @@ const Home = () => {
 
         <section id="about" class="section">
           <div class="container-2">
-            <h2>About Me</h2>
+            <h2 className="container-3">About Me</h2>
             <p className="words">
               Hello there! I'm Sree Rajesh, a passionate full-stack developer
               with a love for crafting elegant solutions to complex problems.
@@ -58,16 +58,32 @@ const Home = () => {
         </section>
 
         <section id="projects" class="section">
-          <div class="container-2">
+          <div class="container-4">
             <h2>Projects</h2>
             <div class="project">
-              <img src="images\E-commerce image.avif" alt="" />
+              <img
+                className="img-1"
+                src="images\E-commerce image.avif"
+                alt=""
+              />
+              <img
+                className="img-1"
+                src="images\Expence tracker img.jpeg"
+                alt=""
+              />
+              <img className="img-1" src="images\Food Recipe img.jpeg" alt="" />
+              <img
+                className="img-1"
+                src="images\Landing page img.webp"
+                alt=""
+              />
+              <img className="img-1" src="images\pick bazar-2.jpeg" alt="" />
             </div>
-            <div class="project">
+            {/* <div class="project">
               <h3>Project 2</h3>
               <p>Description of Project 2...</p>
               <a href="#">View Project</a>
-            </div>
+            </div> */}
           </div>
         </section>
 
