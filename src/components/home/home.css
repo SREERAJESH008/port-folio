@@ -12,6 +12,21 @@ body {
     background-color: #1DB954;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-3 {
+    color: black;
+}
+
 .container-1 {
     width: 100vw;
     height: auto;
@@ -45,24 +60,23 @@ body {
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* display: grid; */
     flex-direction: column;
-    /* grid-template-columns: auto auto auto; */
     padding: 10px;
     color: black;
-
-
 }
 
 .project {
-    gap: 2rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* Adjust minmax values as per your need */
+    gap: 5rem;
+    /* Adjust the gap size as per your need */
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
     padding: 20px;
-    display: grid background-color: black;
-
 }
+
 
 .img-1 {
     width: 25rem;
@@ -92,6 +106,52 @@ nav ul li a {
 
 .project {
     margin-bottom: 20px;
+}
+
+
+.example {
+    position: relative;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.content {
+    font-family: optima;
+    opacity: 0;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: black;
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 400px;
+    height: 270px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+
+.example .content:hover {
+    opacity: 2;
+}
+
+.example .content .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+}
+
+.example .content:hover .text {
+    opacity: 1;
+    transform: translateY(250px);
+    -webkit-transform: translateY(120px);
 }
 
 /* Media queries */

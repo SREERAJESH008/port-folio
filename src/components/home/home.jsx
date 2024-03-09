@@ -1,4 +1,5 @@
 import "./home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -58,40 +59,84 @@ const Home = () => {
         </section>
 
         <section id="projects" class="section">
-          <div class="container-4">
-            <h2>Projects</h2>
-            <div class="project">
+          {/* <div class="container-4"> */}
+          <h2>Projects</h2>
+          <div class="project">
+            <div class="example">
               <img
-                className="img-1"
-                src="images\E-commerce image.avif"
-                alt=""
+                src="images\Food Recipe img.jpeg"
+                width="400"
+                height="270"
+                alt="E-commerce"
               />
-              <img
-                className="img-1"
-                src="images\Expence tracker img.jpeg"
-                alt=""
-              />
-              <img className="img-1" src="images\Food Recipe img.jpeg" alt="" />
-              <img
-                className="img-1"
-                src="images\Landing page img.webp"
-                alt=""
-              />
-              <img className="img-1" src="images\pick bazar-2.jpeg" alt="" />
+
+              <div class="content">
+                <Link to={`/foodrecipe`}>
+                  <div class="text">Food Recipe</div>
+                </Link>
+              </div>
             </div>
-            {/* <div class="project">
-              <h3>Project 2</h3>
-              <p>Description of Project 2...</p>
-              <a href="#">View Project</a>
-            </div> */}
+            <div class="example">
+              <a href="https://magenta-rabanadas-353b57.netlify.app"></a>
+              <img
+                src="images\Expence tracker img.jpeg"
+                width="400"
+                height="270"
+                alt="E-commerce"
+              />
+              <div class="content">
+                <div class="text">Expence Tracker</div>
+              </div>
+            </div>
+            <div class="example">
+              <img
+                src="images\E-commerce image.avif"
+                width="400"
+                height="270"
+                alt="E-commerce"
+              />
+              <div class="content">
+                <div class="text">E-Commerce</div>
+              </div>
+            </div>
+
+            <div class="example">
+              <img
+                src="images\Landing page img.webp"
+                width="400"
+                height="270"
+                alt="E-commerce"
+              />
+              <div class="content">
+                <div class="text">Landing Page</div>
+              </div>
+            </div>
+
+            <div class="example">
+              <img
+                src="images\pick bazar-2.jpeg"
+                width="400"
+                height="270"
+                alt="E-commerce"
+              />
+              <div class="content">
+                <div class="text">Pick Bazar</div>
+              </div>
+            </div>
           </div>
         </section>
 
         <section id="contact" class="section">
           <div class="container">
             <h2>Contact Me</h2>
-            <p>Email: john@example.com</p>
-            <p>Phone: 123-456-7890</p>
+            <p>Email: sreerajesh008@gmail.com</p>
+            <p>Phone: +91 9074352422</p>
+            <div className="container-4">
+              <a href="https://github.com/SREERAJESH008">GitHub</a>
+              <a href="https://www.linkedin.com/in/sree-rajesh-s-1848s28/">
+                Linked In
+              </a>
+            </div>
           </div>
         </section>
 
