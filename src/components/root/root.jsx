@@ -1,9 +1,14 @@
 import { Outlet } from "react-router-dom";
-import { Route } from "react-router-dom";
-import FoodRecipe from "../foodrecipe/foodrecipe";
+import Food from "../food/food";
+import Home from "../home/home";
 
 const Root = () => {
-  return <FoodRecipe />;
+  return (
+    <>
+      <Home></Home>
+      {/* <Outlet></Outlet> */}
+    </>
+  );
 };
 
 export default Root;

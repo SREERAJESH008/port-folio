@@ -63,17 +63,17 @@ const Home = () => {
           <h2>Projects</h2>
           <div class="project">
             <div class="example">
-              <img
-                src="images\Food Recipe img.jpeg"
-                width="400"
-                height="270"
-                alt="E-commerce"
-              />
+              <Link to={`/food`}>
+                <img
+                  src="images\Food Recipe img.jpeg"
+                  width="400"
+                  height="270"
+                  alt="E-commerce"
+                />
+              </Link>
 
               <div class="content">
-                <Link to={`/foodrecipe`}>
-                  <div class="text">Food Recipe</div>
-                </Link>
+                <div class="text">Food Recipe</div>
               </div>
             </div>
             <div class="example">

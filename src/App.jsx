@@ -5,28 +5,22 @@ import "./App.css";
 import React from "react";
 import Root from "./components/root/root";
 import Home from "./components/home/home";
-import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import FoodRecipe from "./components/foodrecipe/foodrecipe";
+import Food from "./components/food/food";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Food-recipe />,
-    // children: [
-    //     {
-    //       path: "Food Recipe",
-    //       element: < FoodRecipe />,
-    //     },
-    // ]
+    element: <Root />,
+    children: [{ path: "Food", element: <Food /> }],
   },
 ]);
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <></>;
+  return <>{<RouterProvider router={router} />}</>;
 }
 
 export default App;
