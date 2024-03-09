@@ -13,14 +13,18 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    children: [{ path: "Food", element: <Food /> }],
+    children: [{ path: "food", element: <Food /> }],
   },
 ]);
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <>{<RouterProvider router={router} />}</>;
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;

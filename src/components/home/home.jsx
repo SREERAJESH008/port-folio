@@ -63,17 +63,20 @@ const Home = () => {
           <h2>Projects</h2>
           <div class="project">
             <div class="example">
-              <Link to={`/food`}>
-                <img
-                  src="images\Food Recipe img.jpeg"
-                  width="400"
-                  height="270"
-                  alt="E-commerce"
-                />
-              </Link>
+              <img
+                src="images\Food Recipe img.jpeg"
+                width="400"
+                height="270"
+                alt="E-commerce"
+              />
 
               <div class="content">
-                <div class="text">Food Recipe</div>
+                <a
+                  href="https://magenta-rabanadas-353b57.netlify.app"
+                  target="_blank"
+                >
+                  <div class="text">Food Recipe</div>
+                </a>
               </div>
             </div>
             <div class="example">
@@ -85,7 +88,12 @@ const Home = () => {
                 alt="E-commerce"
               />
               <div class="content">
-                <div class="text">Expence Tracker</div>
+                <a
+                  href="https://magenta-rabanadas-353b57.netlify.app"
+                  target="_blank"
+                >
+                  <div class="text">Expence Tracker</div>
+                </a>
               </div>
             </div>
             <div class="example">

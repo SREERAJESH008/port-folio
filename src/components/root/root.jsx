@@ -6,7 +6,8 @@ const Root = () => {
   return (
     <>
       <Home></Home>
-      {/* <Outlet></Outlet> */}
+      {/* <h1>hello mama</h1> */}
+      <Outlet></Outlet>
     </>
   );
 };
